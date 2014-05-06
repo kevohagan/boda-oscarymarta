@@ -1,68 +1,161 @@
 
 //imagen corporativa
 
+/*
+font-family: 'duty_cycleregular';
+font-family: 'canterbold_3d';
+font-family: 'canterbold_shadow';
+font-family: 'canterbold_strips';
+
+font-family: 'hello_denver_display_boldbold';
+
+
+font-family: 'hello_denver_display_regulaRg';
+font-family: 'porter_sans_blockblock';
+
+font-family: 'wolf_in_the_city_lightregular';
+font-family: 'wolf_in_the_cityregular';
+font-family: 'wolf_in_the_cityregular';
+*/
+
+
+
+@import "mixins.less";
+
+
+
+@alturaHeader:80px;
+
 //los tres azules de boda.
-@color_1:#d0e5e8;
-@color_2:#ebf5f6;
+@colorprincipal:#279;
+@colorsubprincipal:#77AABE;
+@colorsecundario:#EECDB0;
 
-@fontcolor:#83b6b7;
 
 
+
+
+
+@fonthandwriting:'wolf_in_the_cityregular';
+@fonthipster:'canterbold';
+@fonttext:'canterlight';
+@fontheader:'hello_denver_display_regulaRg';
+
+
+.fontheader{
+	font-family: @fontheader;
+}
+
+.fonthand{
+	font-family: @fonthandwriting;
+}
+
+.fonthipster{
+	font-family: @fonthipster;
+	//text-shadow: 2px 2px 0px @fontcolor;
+}
+
+.fonttext{
+	font-family: @fonttext;
+}
 //fuentes gotham y 
 .color_1{
- background-color: @color_1; 	
+ background-color: @colorprincipal; 	
 }
 
 .color_2{
-	 background-color: @color_2; 	
+	 background-color: @colorsubprincipal; 	
 }
 
 
-.container{
-	padding:50px 20px;
+.color_3{
+	 background-color: @colorsecundario; 	
 }
+
+
+.color_white{
+	background-color: white; 	
+}
+
+
+
+.center{
+	text-align: center;
+	margin:0 auto;
+}
+
+
+.colorprincipal{
+	color:@colorprincipal;
+}
+
 
 html,
 body {
-  font-size: 18px;
+  font-size:14px;
   margin:0px;
-  font-family: 'gotham_roundedbook','Helvetica',Arial, sans-serif;
-  background-color: @color_1; 	
+  font-family: @fonttext;
+  background-color: @colorsecundario; 	
+  color:#333;
+  //padding body
+ }
+
+body{
+	/*padding-top:@alturaHeader;*/
 }
 
 
-.subfont{
-	font-family: 'gotham_roundedbook','Helvetica',Arial, sans-serif;
-	font-size:70px;
-	color:@fontcolor;
-}
-
-p{
-	color:@fontcolor;
-}
-
-h1,h2,h3,h4{
-	
-	font-family: 'wolf_in_the_city_lightregular','Helvetica',Arial, sans-serif;
-	color:#FFF;
-	
-}
 
 h1{
-	font-size:140px;
+	font-size: 5.5em;
+	margin-top:3px !important;
+	color:white;
+}
 
+h2{
+	margin-top:3px !important;
+	font-size: 5em;
+	/*color:@fontcolor;
+	line-height: 50%;
+	text-shadow: 2px 2px 0px white;*/
+	color:white;
+}
+
+h3{
+	font-size: 4.0em;
+	line-height: 50%;
+	color:@colorsecundario;
+
+}
+
+h4{
+	font-size: 2.0em;
+	color:white;
+}
+
+.petit{
+	font-size: 0.5em;
+	color:@colorprincipal;
+}
+
+.subfoto{
+	margin-top:-20px;
+	margin:0 auto;
+	text-align: center;
 }
 
 span:after, :before{
 	display:inline;
 }
 
-h2{
-	font-size:120px;
-	color:@fontcolor;
-	
-	line-height: 67px;
-	text-shadow: 2px 2px 0px white;
+p{
+	color:#333;
+	font-size: 2.0em;
+	margin-top:10px;
+}
+
+#amigos p{
+	color:white;
 }
 
 section{
@@ -71,51 +164,69 @@ section{
 }
 
 footer{
-  color:#d0d0d0;
+  color:@colorprincipal;
   text-align: center;
 }
 
-.center{
-	margin:0px auto;
+.line{
+	height:3px;
+	position:fixed;
+	top:0;
+	z-index: 10;
+	background-color:@colorprincipal;
+	width:100%;
+	left:0;
 }
 
-.textcenter{
+header{
 	text-align: center;
+	
+	background-color:#fff;
+	
+	width: 100%;
+	
 }
+
+.header--fixed {
+position: fixed;
+z-index: 10;
+right: 0;
+left: 0;
+top: 0px;
+height:@alturaHeader;
+background-color: @colorsubprincipal;
+color:@colorprincipal;
+
+}
+
+.principal{
+	margin-top:90px;
+	
+}
+
+#backgroundimage{
+	background-image:url('../../img/boda.jpg');
+	text-align: center;
+	-webkit-clip-path: circle();
+	background-size: cover;
+
+
+}
+
+.imageamigo{
+
+}
+
 
 .right{
 	float:right;
 }
 
-.logo{
-	margin-top:20px;
-
+.alignright{
+	text-align: right;
 }
 
-
-
-.titulo{
-	text-align: center;
-	margin-bottom:40px;
-}
-
-.titulo h1{
-	margin:0;
-	line-height: 77px;
-	text-shadow: 2px 2px 0px @fontcolor;
-}
-
-
-.bloquetexto{
-	margin:20px auto;
-	max-width: 600px;
-	
-}
-
-
-#masthead .icon{
-	float:left;
-
-
+.questions li.current > span label, .no-js .questions li > span label{
+	 color: @colorsecundario; 	
 }
 
