@@ -2,12 +2,21 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "iron-router": {},
-      "collection2": {},
-      "less-bootstrap-3": {},
-      "animate-css": {},
-      "wow": {},
-      "stellar": {}
+      "iron-router": {
+        "version": "0.7.1"
+      },
+      "collection2": {
+        "version": "0.3.11"
+      },
+      "less-bootstrap-3": {
+        "version": "0.0.1"
+      },
+      "wow": {
+        "version": "0.1.3"
+      },
+      "stellar": {
+        "version": "0.1.0"
+      }
     },
     "packages": {
       "iron-router": {
@@ -24,11 +33,6 @@
         "git": "https://github.com/DerMambo/less-bootstrap-3.git",
         "tag": "v0.0.1",
         "commit": "1321ac0ebc809bc354186b96f4c28b7042e38507"
-      },
-      "animate-css": {
-        "git": "https://github.com/nate-strauser/meteor-animate-css.git",
-        "tag": "v2.1.0",
-        "commit": "08d7d98ce292d528f05eab91bfb220b3a355c1d5"
       },
       "wow": {
         "git": "https://github.com/noorderstorm/meteor-wow.git",
