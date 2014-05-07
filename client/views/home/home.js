@@ -5,7 +5,7 @@
 
 Template.masterLayout.rendered = function() {
 
-  var myElement = document.querySelector("header");
+var myElement = document.querySelector("header");
 // Headroom cambia clase de header segun scroll..
 var headroom = new Headroom(myElement, {
   "tolerance": 5,
@@ -33,7 +33,8 @@ var em=imageselect-2;
 
 
 
-var lefttotal=0;
+var lefttotal=[];
+
 var leftinicial=0;
 
 $( window ).load(function() {
@@ -47,21 +48,20 @@ $( window ).load(function() {
 
 
 
-
-
+var i=0;
+var left=0;
 $('#shop-demo article img').each(function(){
   //sumamos lo que miden todas las imágenes
-    lefttotal+=$(this).width();
+    left+=$(this).width();
+    lefttotal[i]=left;
+    i++;
 
    
 });
 
 
 
-
-
-
-$('#shop-demo .wrapper').css({width:""+lefttotal+""});
+$('#shop-demo .wrapper').css({width:""+lefttotal[i]+""});
 $('#shop-demo .wrapper').css({left:""+leftinicial+"px"});
 
 });
@@ -90,15 +90,21 @@ var theForm = document.getElementById( 'theForm' );
       
 
 $('#shop-demo article img').click(function(){
-  var el= $(this).width();
-
-  if($(this).data('image')< imageselect){
-    $('#shop-demo .wrapper').animate({left:"-="+el+""});
+  if($(this).data('image')==1){
+    el=0;
   }else{
-    $('#shop-demo .wrapper').animate({left:"+="+el+""});
-  }
 
-  imageselect=$(this).data('image');
+    if($(this).data('image')==4){
+        el= -lefttotal[$(this).data('image')-2] + ($(window).width() - $(this).width());
+
+        
+    }else{
+       el= -lefttotal[$(this).data('image')-2] + 100;
+    }
+  }
+//tengo que saber el left de cada imagen...
+    $('#shop-demo .wrapper').animate({left:""+el+""});
+    imageselect=$(this).data('image');
 
 });
 
