@@ -3,7 +3,7 @@
     "iron-router": {},
     "collection2": {},
     "less-bootstrap-3": {},
-    "animate-css": {},
-    "stellar": {}
+	"wow": {},
+	"stellar": {}
   }
 }
