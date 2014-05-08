@@ -18,7 +18,10 @@ var headroom = new Headroom(myElement, {
     "notTop": "headroom--not-top"
   }
 });
+
 headroom.init();
+
+
 }
 
 Template.home.rendered = function() {
@@ -109,7 +112,7 @@ $('#shop-demo article img').click(function(){
 
 });
 
-
+  //animaciones
   new WOW().init();
 
   //efecto parallax
@@ -118,10 +121,7 @@ $('#shop-demo article img').click(function(){
 
 
 
-  //RSVP
-  $('#modalButton').click(function(){
-	$('#formulario').modal({show:true})
-  });
+  
 
 
   $(window).scroll(function(){

@@ -29,6 +29,12 @@
   float:left;
   width:auto;
   height: 500px;
+  opacity: 0.8;
+}
+
+#shop-demo article img:hover{
+ opacity: 1.0;
+ cursor:pointer;
 }
 
 
