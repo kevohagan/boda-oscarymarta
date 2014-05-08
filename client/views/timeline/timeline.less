@@ -1,0 +1,104 @@
+@colorprincipal:#279;
+@colorsubprincipal:#77AABE;
+@colorsecundario:#EECDB0;
+
+.container.timeline{
+	width:800px;
+	font-size: 20px;
+	
+}
+
+.timeslot {
+	width: 100%;
+	float:left;
+	/*border-top: 1px solid #ddd;*/
+	position: relative;
+}
+
+.timeslot .left{
+	float: left;
+	width:50%;
+	padding-right:10px;
+
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+	
+}
+
+.timeslot .right{
+	float: right;
+	width: 50%;
+	
+	padding-left:10px;
+
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+	
+}
+
+.timeslot p{
+	font-size: 1.0em;
+	letter-spacing: 0.0625em;
+	color:white;
+}
+
+.timeslot span{
+	font-size: 3.0em;
+	color:@colorsecundario;
+	
+}
+
+.timeslot .texto{
+	display:none;
+	
+}
+
+.timeslot .titulo{
+	font-size: 3.0em;
+	color:@colorprincipal;
+	
+}
+
+.timeslot .left span{
+	float:right;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
+.timeslot .left .titulo {
+	float:right;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
+//svg animation
+
+#svgcontainer{
+  	margin-top:50px;
+    position: relative;
+    overflow: hidden;
+    background: @colorsubprincipal;
+
+}
+ 
+svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+ 
+svg line {
+    stroke-width: 4;
+    stroke: white;
+    fill: none;
+    -webkit-transition: -webkit-transform .6s ease-out;
+    transition: transform .6s ease-out;
+}
+
+/* 
+.svgcontainer:hover svg line {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+}*/
