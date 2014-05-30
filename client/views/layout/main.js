@@ -1,30 +1,20 @@
+//Meteor.subscribe("novios");
 
 
+//modificar este scoop de variables globales con Kevin, mirar parte cliente
 
-
-
-Template.masterLayout.rendered = function() {
-
-var myElement = document.querySelector("header");
-// Headroom cambia clase de header segun scroll..
-var headroom = new Headroom(myElement, {
-  "tolerance": 5,
-  "offset": 405,
-  "classes": {
-    "initial": "animated",
-    "pinned": "slideInDown",
-    "unpinned": "slideOutUp",
-    "top": "headroom--top",
-    "notTop": "headroom--not-top"
-  }
+UI.registerHelper('novios', function() {
+    //posible implementación con collections.
+    //return Novios.findOne( projectId );
+  
+    return json;
 });
 
-headroom.init();
+//para usarlo poner novios.nombrenovio.
 
 
-}
 
-Template.home.rendered = function() {
+/*Template.main.rendered = function() {
 
 
 	// grab an element
@@ -70,7 +60,8 @@ $('#shop-demo .wrapper').css({left:""+leftinicial+"px"});
 
 });
 
-
+//esto es el formulario classie..
+//iría en otro template..
 var theForm = document.getElementById( 'theForm' );
 
       new stepsForm( theForm, {
@@ -78,11 +69,11 @@ var theForm = document.getElementById( 'theForm' );
           // hide form
           classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
 
-          /*
-          form.submit()
-          or
-          AJAX request (maybe show loading indicator while we don't have an answer..)
-          */
+          
+          //form.submit()
+          //or
+          //AJAX request (maybe show loading indicator while we don't have an answer..)
+          
 
           // let's just simulate something...
           var messageEl = theForm.querySelector( '.final-message' );
@@ -112,10 +103,10 @@ $('#shop-demo article img').click(function(){
 
 });
 
-  //animaciones
-  new WOW().init();
+ 
 
   //efecto parallax
+  
   $('#element').attr('data-stellar-ratio', 1.1);
   $.stellar();
 
@@ -138,7 +129,7 @@ $('#shop-demo article img').click(function(){
     $('#backgroundimage').css({"-webkit-filter": "blur("+Math.floor((st * .05)) + "px)" });
 
 
-     /*$('#backgroundimage').css({"-webkit-filter": "grayscale("+st/500+""});*/
+     //$('#backgroundimage').css({"-webkit-filter": "grayscale("+st/500+""});
 
 
 
@@ -146,7 +137,7 @@ $('#shop-demo article img').click(function(){
   });
 
 
-}
+}*/
 
 
 

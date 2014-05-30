@@ -1,0 +1,58 @@
+
+
+.historia h3{
+	color:@colorsecundario;
+	font-size: 3.5em;
+	@media screen and (min-width: 1300px) {
+    	font-size: 4.5em;
+		
+    
+	}
+
+	@media screen and (max-width: 430px) {
+    	font-size: 2.5em;
+    
+	}
+}
+
+.historia h2{
+	color:@colorsubprincipal;
+}
+
+
+
+.historiaindividual {
+		
+		opacity: 1.0;
+		filter: alpha(opacity=0);
+		position: absolute;
+		padding: 0px 10px;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		color: #fff;
+		background-color: @colorsubprincipal;
+
+		opacity:0;
+		.transition(opacity 1s linear);
+
+		max-width: 500px;
+		cursor:pointer;
+		padding:50% 20px;
+}
+
+.historiaindividual p{
+	color: #fff;
+
+}
+
+.historiaindividual:hover{
+	opacity:0.8;
+}
+
+
+
+.historia .col-xs-9{
+
+}

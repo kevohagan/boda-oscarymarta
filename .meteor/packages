@@ -10,5 +10,7 @@ less
 iron-router
 collection2
 less-bootstrap-3
-wow
 stellar
+font-awesome-4-less
+modernizr-meteor
+jquery-imagesloaded

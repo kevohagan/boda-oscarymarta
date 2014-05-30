@@ -10,17 +10,10 @@ Template.timeline.rendered = function() {
  
 
     st = e.pageY - $(this).position().top;
+	$('#svgcontainer:hover svg line').css({"-webkit-transform": "translateY("+Math.floor(st) + "px)" });
 
     
-
-  
-
-   
-
-    $('#svgcontainer:hover svg line').css({"-webkit-transform": "translateY("+Math.floor(st) + "px)" });
-
-    
-     /*$('#backgroundimage').css({"-webkit-filter": "grayscale("+st/500+""});*/
+     
 
     });
 

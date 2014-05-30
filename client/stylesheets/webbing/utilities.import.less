@@ -1,0 +1,104 @@
+
+//algunos mixins y utilidades que ire utilizando
+
+//helpers
+
+.align() {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+
+
+//creamos las clases de las variables por si queremos utlizarlas marcado "quees_nombre"
+//directamente en el html estilo semantic ui => definir color container.
+
+.font_headers{
+	font-family: @fontheaders;
+}
+
+.font_hand{
+	font-family: @fonthandwriting;
+}
+
+.font_hipster{
+	font-family: @fonthipster;
+	//text-shadow: 2px 2px 0px @fontcolor;
+}
+
+.font_text{
+	font-family: @fonttext;
+}
+
+
+.color_principal{
+ background-color: @colorprincipal;
+ color:@fontcolorprincipal;
+}
+
+.color_subprincipal{
+	 background-color: @colorsubprincipal;
+	 color:@fontcolorsubprincipal;
+}
+
+.font_color_principal{
+	color:@colorprincipal;
+}
+
+
+.font_color_secundario{
+	color:@colorsecundario;
+}
+
+//defino un "blanco" por si queremos darle un poco mas de gris o crema al fondo 
+//blanco predominante en las bodas.
+.color_blanco{
+	background-color: white;
+}
+
+
+
+
+
+//clases que utilizamos como utilidades
+
+.center{
+	text-align: center;
+	margin:0 auto;
+}
+
+
+.line{
+	height:3px;
+	position:fixed;
+	top:0;
+	z-index: 10;
+	background-color:@colorprincipal;
+	width:100%;
+	left:0;
+}
+
+.text_small{
+	font-size: 0.5em;
+	color:@colorsecundario;
+}
+
+
+.relative{
+	position:relative;
+}
+
+
+.right{
+	float:right;
+}
+
+.alignright{
+	text-align: right;
+}
+
+

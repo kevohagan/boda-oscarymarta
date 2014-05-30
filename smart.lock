@@ -5,8 +5,10 @@
       "iron-router": {},
       "collection2": {},
       "less-bootstrap-3": {},
-      "wow": {},
-      "stellar": {}
+      "stellar": {},
+      "font-awesome-4-less": {},
+      "modernizr-meteor": {},
+      "jquery-imagesloaded": {}
     },
     "packages": {
       "iron-router": {
@@ -24,15 +26,25 @@
         "tag": "v0.0.1",
         "commit": "1321ac0ebc809bc354186b96f4c28b7042e38507"
       },
-      "wow": {
-        "git": "https://github.com/noorderstorm/meteor-wow.git",
-        "tag": "v0.1.3",
-        "commit": "f5e0e3fbb123c1e19f236123f52d93eea4716001"
-      },
       "stellar": {
         "git": "https://github.com/noorderstorm/meteor-stellar.git",
         "tag": "v0.1.0",
         "commit": "1ca2f68e0cca5967a6f88545cea12055c9fc2465"
+      },
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.3.7",
+        "commit": "21f60350cd238fb7053132f42409a3090f76939e"
+      },
+      "modernizr-meteor": {
+        "git": "https://github.com/ckir/modernizr-meteor.git",
+        "tag": "v2.6.2",
+        "commit": "391ca2a3beff3cd2b0e1099cb2d744b5a2e8a73e"
+      },
+      "jquery-imagesloaded": {
+        "git": "https://github.com/waltyuyu/meteor-jquery-imagesloaded.git",
+        "tag": "v0.0.2",
+        "commit": "90bd930cb149c3b1f2f04e08e69e736b2ea1005a"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
@@ -41,8 +53,8 @@
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
-        "tag": "v0.4.0",
-        "commit": "2cc6aac0d35a4e00b065c1437d540b2aefba5241"
+        "tag": "v0.5.1",
+        "commit": "a29956b34d03a4591dbd0eaed9d37009ef48b8db"
       }
     }
   }
